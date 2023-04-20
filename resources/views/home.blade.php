@@ -15,7 +15,8 @@
                 <th scope="col">Username</th>
                 <th scope="col">Email</th>
                 <th scope="col">Jenis Kelamin</th>
-                <th scope="col">role</th>
+                <th scope="col">Role</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,10 @@
                 <td>user1@gmail.com</td>
                 <td>Pria</td>
                 <td>Mahasiswa</td>
+                <td>
+                    <button class="btn btn-sm btn-warning"> Edit </button>
+                    <button class="btn btn-sm btn-danger"> Hapus </button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
@@ -32,6 +37,10 @@
                 <td>user2@gmail.com</td>
                 <td>Wanita</td>
                 <td>Mahasiswa</td>
+                <td>
+                    <button class="btn btn-sm btn-warning"> Edit </button>
+                    <button class="btn btn-sm btn-danger"> Hapus </button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">3</th>
@@ -39,6 +48,10 @@
                 <td>user3@gmail.com</td>
                 <td>Pria</td>
                 <td>Mahasiswa</td>
+                <td>
+                    <button class="btn btn-sm btn-warning"> Edit </button>
+                    <button class="btn btn-sm btn-danger"> Hapus </button>
+                </td>
             </tr>
         </tbody>
     </table>
