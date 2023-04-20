@@ -11,11 +11,11 @@
             <li class="breadcrumb-item active" aria-current="page">Create User</li>
         </ol>
     </nav>
-    <h3>Create User Form</h3>
-    <form>
+    <h3>Tambah User</h3>
+    <form action="#">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
-            <input type="email" class="form-control" id="username" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="username" aria-describedby="usernameHelp">
             <div id="usernameHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
