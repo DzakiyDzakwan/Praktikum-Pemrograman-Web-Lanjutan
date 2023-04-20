@@ -15,31 +15,24 @@
                 <th scope="col">Username</th>
                 <th scope="col">Email</th>
                 <th scope="col">Jenis Kelamin</th>
-                <th scope="col">role</th>
+                <th scope="col">Role</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>User1</td>
-                <td>user1@gmail.com</td>
-                <td>Pria</td>
-                <td>Mahasiswa</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>User2</td>
-                <td>user2@gmail.com</td>
-                <td>Wanita</td>
-                <td>Mahasiswa</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>User3</td>
-                <td>user3@gmail.com</td>
-                <td>Pria</td>
-                <td>Mahasiswa</td>
-            </tr>
+            @foreach ($users as $item)
+                <tr>
+                    <th scope="row">{{ $loop->iteration }}</th>
+                    <td>{{ $item->username }}</td>
+                    <td>{{ $item->email }}</td>
+                    <td>{{ $item->jenis_kelamin }}</td>
+                    <td>{{ $item->role }}</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning"> Edit </button>
+                        <button class="btn btn-sm btn-danger"> Hapus </button>
+                    </td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
     <div class="d-flex justify-content-end">
