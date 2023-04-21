@@ -21,11 +21,11 @@ class UserController extends Controller
     public function store(Request $request) {
 
         User::create([
-            'username' => 'userseeder1',
-            'email' => 'userseeder1@gmail.com',
-            'password' => 'userseeder1',
-            'jenis_kelamin' => 'LK',
-            'role' => 'mahasiswa'
+            'username' => $request->username,
+            'email' => $request->gmail,
+            'password' => $request->password,
+            'jenis_kelamin' => $request->jenis_kelamin,
+            'role' => $request->role
         ]);
 
         return back();
