@@ -12,6 +12,12 @@
 -   Download ZIP Repository terlebih dahulu
 -   Extract Folder
 -   Copy file `.env.example` menjadi file `.env`.
+-   Lakukan Command
+
+```
+composer install
+```
+
 -   Buka file `.env` lalu sesuaikan database `DB_DATABASE` , `DB_USERNAME`, `DB_PASSWORD` dengan database kalian .
 -   Lakukan migration dengan command
 
