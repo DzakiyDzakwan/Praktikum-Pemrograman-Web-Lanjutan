@@ -12,34 +12,36 @@
         </ol>
     </nav>
     <h3>Tambah User</h3>
-    <form action="#">
+
+    <form action="/store-user" method="POST">
+        @csrf
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" aria-describedby="usernameHelp">
+            <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" name="username">
             <div id="usernameHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password">
+            <input type="password" class="form-control" id="password" name="password">
             <div id="passwordHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
             <label for="jenis_kelamin">Jenis Kelamin</label>
-            <select class="form-select" id="jenis_kelamin" aria-label="Default select example">
-                <option>Pria</option>
-                <option>Wanita</option>
+            <select class="form-select" id="jenis_kelamin" aria-label="Default select example" name="jk">
+                <option value="LK">Pria</option>
+                <option value="PR">Wanita</option>
             </select>
         </div>
         <div class="mb-3">
             <label for="role">Role</label>
-            <select class="form-select" id="role" aria-label="Default select example">
-                <option>Mahasiswa</option>
-                <option>Admin</option>
+            <select class="form-select" id="role" aria-label="Default select example" name="role">
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="admin">Admin</option>
             </select>
         </div>
         <button type="submit" class="btn btn-large btn-primary">Submit</button>
