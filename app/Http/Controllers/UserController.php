@@ -18,7 +18,6 @@ class UserController extends Controller
     }
 
     public function store(Request $request) {
-        // dd($request->all());
         User::create([
             'username' => $request->username,
             'email' => $request->email,
@@ -27,6 +26,6 @@ class UserController extends Controller
             'role' => $request->role
         ]);
 
-        return back();
+        return redirect('/');
     }
 }
