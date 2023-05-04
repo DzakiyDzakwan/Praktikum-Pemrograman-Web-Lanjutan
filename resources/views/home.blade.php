@@ -34,8 +34,16 @@
                     </td>
                     <td>{{ $item->role }}</td>
                     <td>
-                        <button class="btn btn-sm btn-warning"> Edit </button>
-                        <button class="btn btn-sm btn-danger"> Hapus </button>
+                        {{-- Edit Button --}}
+                        <a href="/edit-user/{{ $item->id }}">
+                            <button class="btn btn-sm btn-warning"> Edit </button>
+                        </a>
+                        {{-- Delete Button --}}
+                        <form action="/delete-user/{{ $item->id }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-sm btn-danger" type="submit"> Hapus </button>
+                        </form>
                     </td>
                 </tr>
             @endforeach
