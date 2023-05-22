@@ -43,4 +43,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function enrollment()
+    {
+        return $this->belongsToMany(Matakuliah::class, 'user_enrollments', 'user_id', 'mata_kuliah_id');
+    }
 }

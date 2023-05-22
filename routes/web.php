@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\MatakuliahController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -28,3 +29,5 @@ Route::post('/store-mata-kuliah', [MatakuliahController::class, 'store']);
 Route::get('/edit-mata-kuliah/{id}', [MatakuliahController::class, 'edit']);
 Route::put('/update-mata-kuliah', [MatakuliahController::class, 'update']);
 Route::delete('/delete-mata-kuliah/{id}', [MatakuliahController::class, 'destroy']);
+
+Route::get('/enrollment', [EnrollmentController::class, 'index']);

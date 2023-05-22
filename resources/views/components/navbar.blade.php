@@ -14,7 +14,7 @@
                     <a class="nav-link" href="/mata-kuliah">Mata Kuliah</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="/enrollment">Enrollment</a>
+                    <a class="nav-link" href="/enrollment">Enrollment</a>
                 </li>
             </ul>
         </div>

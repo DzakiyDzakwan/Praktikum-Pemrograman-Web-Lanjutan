@@ -16,6 +16,7 @@ class MatkulSeeder extends Seeder
         Matakuliah::create([
             'nama' => 'Matematika Dasar'
         ]);
+        
         Matakuliah::create([
             'nama' => 'Dasar Pemrograman'
         ]);
